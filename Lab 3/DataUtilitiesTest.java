@@ -21,22 +21,6 @@ public class DataUtilitiesTest extends DataUtilities{
 	
 	private Values2D values2D;
 
-//
-//	@BeforeClass
-//	public static void setUpBeforeClass() throws Exception {
-//	}
-//
-//	@AfterClass
-//	public static void tearDownAfterClass() throws Exception {
-//	}
-
-	//@Before
-//	public void setUp() {
-//		DefaultKeyedValues2D testValues = new DefaultKeyedValues2D(); 
-//		testValues.addValue(1, 2, 3);
-//		testValues.addValue(4, 5, 6);
-//		values2D = testValues;
-//	}
 	@Before
 	public void setUp() {
 	    DefaultKeyedValues2D testValues = new DefaultKeyedValues2D(); 
@@ -65,9 +49,7 @@ public class DataUtilitiesTest extends DataUtilities{
 	}
 	@Test
 	public void testValidDataAndColumnWithValidDataAndColumn() {
-		//int column = 1;
 		
-		//System.out.println(DataUtilities.calculateColumnTotal(values2D,1));
 		assertEquals("When 2D matrix given 7.0 should be the output", 7.0, DataUtilities.calculateColumnTotal(values2D,1), 0.0000001d);
 	}
 	
@@ -411,7 +393,7 @@ public class DataUtilitiesTest extends DataUtilities{
 
 	
 	@Test
-  public void testGetCumulativePercentagesWithNullValues() {
+	public void testGetCumulativePercentagesWithNullValues() {
       DefaultKeyedValues data = new DefaultKeyedValues();
       data.addValue("0", null);
       
